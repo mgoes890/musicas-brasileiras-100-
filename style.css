@@ -1,0 +1,52 @@
+/* Container fixo no canto superior direito */
+.music-controls {
+  position: fixed;
+  top: 3rem;
+  right: 40px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo geral dos botões */
+.music-controls button {
+  padding: 15px;
+  font-size: 22px;
+  border: none;
+  border-radius: 50%;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Efeito hover */
+.music-controls button:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+/* Animação de giro no botão principal quando tocando */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.playing {
+  animation: spin 2s linear infinite;
+}
+
+/* Nome da música */
+#trackName {
+  position: fixed;
+  top: 7rem;
+  right: 40px;
+  font-size: 16px;
+  color: #333;
+  background: rgba(255,255,255,0.8);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
