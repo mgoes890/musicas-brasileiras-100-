@@ -1,23 +1,16 @@
-// -------------------------------
-// Alternância de Tema Claro/Escuro
-// -------------------------------
+const musicas = [
+  "Aquarela do Brasil – Ary Barroso",
+  "Chega de Saudade – João Gilberto",
+  "Asa Branca – Luiz Gonzaga",
+  "Construção – Chico Buarque",
+  "Garota de Ipanema – Tom Jobim & Vinícius de Moraes"
+  // Adicione mais músicas aqui
+];
 
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
+const lista = document.getElementById("lista-musicas");
 
-// Função para aplicar tema
-function applyTheme(theme) {
-  body.classList.toggle("dark", theme === "dark");
-  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
-  localStorage.setItem("theme", theme);
-}
-
-// Carregar tema salvo ou padrão
-const savedTheme = localStorage.getItem("theme") || "light";
-applyTheme(savedTheme);
-
-// Evento de clique no botão
-themeToggle.addEventListener("click", () => {
-  const newTheme = body.classList.contains("dark") ? "light" : "dark";
-  applyTheme(newTheme);
+musicas.forEach(musica => {
+  const item = document.createElement("li");
+  item.textContent = musica;
+  lista.appendChild(item);
 });
