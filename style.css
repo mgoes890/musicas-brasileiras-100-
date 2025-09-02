@@ -1,169 +1,23 @@
-/* ------------------------------
-   Reset básico
---------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  background: #f5f5f5;
-  color: #222;
-  transition: background 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-/* ------------------------------
-   Cabeçalho
---------------------------------*/
-header {
+h1 {
   text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #ff0055, #ff7a00);
-  color: #fff;
+  color: #333;
 }
 
-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-/* ------------------------------
-   Navegação
---------------------------------*/
-nav {
-  background: #111;
-  padding: 0.7rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-nav a:hover {
-  background: #ff0055;
-}
-
-/* ------------------------------
-   Containers de músicas
---------------------------------*/
-main {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-/* ------------------------------
-   Cards
---------------------------------*/
-.card {
+li {
   background: #fff;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 0.8rem;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-  color: #ff0055;
-}
-
-.card p {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-}
-
-.card audio {
-  width: 100%;
-  margin: 0.5rem 0;
-}
-
-.desc {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-/* ------------------------------
-   Rodapé
---------------------------------*/
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #111;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-/* ------------------------------
-   Dark Mode (automático do SO)
---------------------------------*/
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #121212;
-    color: #e4e4e4;
-  }
-
-  .card {
-    background: #1e1e1e;
-    color: #e4e4e4;
-  }
-
-  nav {
-    background: #222;
-  }
-
-  nav a:hover {
-    background: #ff7a00;
-  }
-
-  header {
-    background: linear-gradient(135deg, #ff7a00, #ff0055);
-  }
-}
