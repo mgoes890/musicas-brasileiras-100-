@@ -5,87 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Músicas</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte moderna do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Ícones (para futuros botões, menus, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Portal Músicas</h1>
+    <h1>🎶 Portal Músicas</h1>
     <p>Trap • Rap • Pagode • Samba • Funk</p>
   </header>
+
+  <!-- Navegação principal -->
   <nav>
-    <a href="#trap">Trap</a>
-    <a href="#rap">Rap</a>
-    <a href="#pagode">Pagode</a>
-    <a href="#samba">Samba</a>
-    <a href="#funk">Funk</a>
+    <ul>
+      <li><a href="#trap">Trap</a></li>
+      <li><a href="#rap">Rap</a></li>
+      <li><a href="#pagode">Pagode</a></li>
+      <li><a href="#samba">Samba</a></li>
+      <li><a href="#funk">Funk</a></li>
+    </ul>
   </nav>
 
-  <!-- Trap -->
-  <div id="trap" class="container">
-    <div class="card">
-      <img src="https://cdn.pixabay.com/audio/2023/03/15/10-20-55-123_200x200.jpg" alt="Trap Beat">
-      <h3>Brazilian Trap Beat</h3>
-      <p>Artista: YellowBirdBeats</p>
-      <audio controls>
-        <source src="https://cdn.pixabay.com/download/audio/2023/03/15/audio_123.mp3?filename=brazilian-trap-beat.mp3" type="audio/mpeg">
-      </audio>
-      <p>Trap instrumental com vibe brasileira, livre para uso.</p>
-    </div>
-  </div>
+  <main>
+    <!-- Trap -->
+    <section id="trap" class="container">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/audio/2023/03/15/10-20-55-123_200x200.jpg" alt="Capa do Trap Beat">
+        <h3>Brazilian Trap Beat</h3>
+        <p><strong>Artista:</strong> YellowBirdBeats</p>
+        <audio controls>
+          <source src="https://cdn.pixabay.com/download/audio/2023/03/15/audio_123.mp3?filename=brazilian-trap-beat.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio.
+        </audio>
+        <p class="desc">Trap instrumental com vibe brasileira, livre para uso.</p>
+      </article>
+    </section>
 
-  <!-- Rap -->
-  <div id="rap" class="container">
-    <div class="card">
-      <img src="https://cdn.pixabay.com/audio/2023/01/10/12-30-55-456_200x200.jpg" alt="Rap Beat">
-      <h3>Rap Flow Livre</h3>
-      <p>Artista: Phoenix_Connection_Brazil</p>
-      <audio controls>
-        <source src="https://cdn.pixabay.com/download/audio/2023/01/10/audio_456.mp3?filename=rap-flow-livre.mp3" type="audio/mpeg">
-      </audio>
-      <p>Rap instrumental com batida marcante, sem copyright.</p>
-    </div>
-  </div>
+    <!-- Rap -->
+    <section id="rap" class="container">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/audio/2023/01/10/12-30-55-456_200x200.jpg" alt="Capa do Rap Beat">
+        <h3>Rap Flow Livre</h3>
+        <p><strong>Artista:</strong> Phoenix_Connection_Brazil</p>
+        <audio controls>
+          <source src="https://cdn.pixabay.com/download/audio/2023/01/10/audio_456.mp3?filename=rap-flow-livre.mp3" type="audio/mpeg">
+        </audio>
+        <p class="desc">Rap instrumental com batida marcante, sem copyright.</p>
+      </article>
+    </section>
 
-  <!-- Pagode -->
-  <div id="pagode" class="container">
-    <div class="card">
-      <img src="https://cdn.pixabay.com/audio/2022/11/05/14-20-55-789_200x200.jpg" alt="Pagode Instrumental">
-      <h3>Pagode do Sol</h3>
-      <p>Artista: RioSamba</p>
-      <audio controls>
-        <source src="https://cdn.pixabay.com/download/audio/2022/11/05/audio_789.mp3?filename=pagode-do-sol.mp3" type="audio/mpeg">
-      </audio>
-      <p>Pagode instrumental alegre e descontraído.</p>
-    </div>
-  </div>
+    <!-- Pagode -->
+    <section id="pagode" class="container">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/audio/2022/11/05/14-20-55-789_200x200.jpg" alt="Capa do Pagode Instrumental">
+        <h3>Pagode do Sol</h3>
+        <p><strong>Artista:</strong> RioSamba</p>
+        <audio controls>
+          <source src="https://cdn.pixabay.com/download/audio/2022/11/05/audio_789.mp3?filename=pagode-do-sol.mp3" type="audio/mpeg">
+        </audio>
+        <p class="desc">Pagode instrumental alegre e descontraído.</p>
+      </article>
+    </section>
 
-  <!-- Samba -->
-  <div id="samba" class="container">
-    <div class="card">
-      <img src="https://cdn.pixabay.com/audio/2022/09/12/10-20-55-321_200x200.jpg" alt="Samba Livre">
-      <h3>Samba da Rua</h3>
-      <p>Artista: Tijuca Sunrise</p>
-      <audio controls>
-        <source src="https://cdn.pixabay.com/download/audio/2022/09/12/audio_321.mp3?filename=samba-da-rua.mp3" type="audio/mpeg">
-      </audio>
-      <p>Samba tradicional com percussão vibrante.</p>
-    </div>
-  </div>
+    <!-- Samba -->
+    <section id="samba" class="container">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/audio/2022/09/12/10-20-55-321_200x200.jpg" alt="Capa do Samba Livre">
+        <h3>Samba da Rua</h3>
+        <p><strong>Artista:</strong> Tijuca Sunrise</p>
+        <audio controls>
+          <source src="https://cdn.pixabay.com/download/audio/2022/09/12/audio_321.mp3?filename=samba-da-rua.mp3" type="audio/mpeg">
+        </audio>
+        <p class="desc">Samba tradicional com percussão vibrante.</p>
+      </article>
+    </section>
 
-  <!-- Funk -->
-  <div id="funk" class="container">
-    <div class="card">
-      <img src="https://cdn.pixabay.com/audio/2023/02/20/14-20-55-654_200x200.jpg" alt="Funk Beat">
-      <h3>Baile Funk Livre</h3>
-      <p>Artista: ScrewedQueen</p>
-      <audio controls>
-        <source src="https://cdn.pixabay.com/download/audio/2023/02/20/audio_654.mp3?filename=baile-funk-livre.mp3" type="audio/mpeg">
-      </audio>
-      <p>Funk carioca com batida contagiante, livre para uso.</p>
-    </div>
-  </div>
+    <!-- Funk -->
+    <section id="funk" class="container">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/audio/2023/02/20/14-20-55-654_200x200.jpg" alt="Capa do Funk Beat">
+        <h3>Baile Funk Livre</h3>
+        <p><strong>Artista:</strong> ScrewedQueen</p>
+        <audio controls>
+          <source src="https://cdn.pixabay.com/download/audio/2023/02/20/audio_654.mp3?filename=baile-funk-livre.mp3" type="audio/mpeg">
+        </audio>
+        <p class="desc">Funk carioca com batida contagiante, livre para uso.</p>
+      </article>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Portal Músicas — Conteúdo musical livre de direitos autorais
+    <p>© 2025 Portal Música — Conteúdo musical livre de direitos autorais</p>
   </footer>
 
   <script src="script.js"></script>
